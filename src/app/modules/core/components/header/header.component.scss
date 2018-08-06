@@ -1,0 +1,7 @@
+@import '~styles/vars/colors';
+@import '~styles/vars/dimensions';
+
+.header {
+  height: $header-height;
+  background-color: $primary-color;
+}

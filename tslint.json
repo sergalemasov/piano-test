@@ -155,7 +155,7 @@
     "number-literal-format": true,
     "object-literal-key-quotes": [
       true,
-      "as-needed"
+      "consistent"
     ],
     "one-line": [
       true,

@@ -1,0 +1,14 @@
+@import '~styles/vars/dimensions';
+
+:host {
+  display: block;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: 100%;
+  padding: $header-height 0 $footer-height;
+  margin: (-$header-height) 0 (-$footer-height);
+}

@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles/global.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -47,6 +47,10 @@
     {
       "project": "e2e/tsconfig.e2e.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "server/tsconfig.srv.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -56,6 +60,10 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {},
+    "serve": {
+      "port": 3000,
+      "proxyConfig": "proxy.conf.js"
+    }
   }
 }

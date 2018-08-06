@@ -1,12 +1,15 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
@@ -14,6 +17,47 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@angular/core/testing": [
+        "../node_modules/@angular/core/testing/index"
+      ],
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ],
+      "@angularclass/*": [
+        "../node_modules/@angularclass/*"
+      ],
+      "rxjs": [
+        "../node_modules/rxjs"
+      ],
+      "rxjs/*": [
+        "../node_modules/rxjs/*"
+      ],
+      "@modules/*": [
+        "./app/modules/*"
+      ],
+      "@const": [
+        "./app/const/index"
+      ],
+      "@services": [
+        "./app/services/index"
+      ],
+      "@guards": [
+        "./app/guards/index"
+      ],
+      "@utils": [
+        "./app/utils/index"
+      ],
+      "@exceptions": [
+        "./app/exceptions/index"
+      ],
+      "@srv-routes": [
+        "../server/routes/index"
+      ],
+      "@srv-const": [
+        "../server/const/index"
+      ]
+    }
   }
 }
